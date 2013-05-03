@@ -25,24 +25,25 @@
 
       <nav id="main">
          <ul>
-		<li><a href="index.html">Home</a></li>
-         	<li><a href="about.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="contact.html">Contact</a></li>
+		<li><a class="nav-home" href="index.html">Home</a></li>
+         	<li><a class="nav-about" href="about.html">About</a></li>
+            <li><a  class="nav-work" href="work.html">Work</a></li>
+            <li><a  class="nav-contact" href="contact.html">Contact</a></li>
          </ul>
       </nav>
 
-   </div>
+   </div> <!--end header-->
 
-   <div id="home-words">
-      <h1> Make it Real</h1>
-      <h1> Make it Pretty</h1>
-      <h1> Make it Happen</h1>
-   </div>   <!--end words-->
+   
+      <div id="home-words">
+         <h1> Make it Real</h1>
+         <h1> Make it Pretty</h1>
+         <h1> Make it Happen</h1>
+      </div>   <!--end home-words-->
+     
+     <div id="content">
 
-   <div id="content">
-
-      <div id="home-about">
+     <div id="home-about">
          <h3> A Little About Me </h3>
          <p> Hi, my name is Khalila and welcome to my personal internet hub. I’ve always felt like    my right brain and left brain are constantly at war with each other because as much as I love to “make things pretty” and showing off my creative chops, I also love the challenge of making things work even when there is no 
          </p>
@@ -51,25 +52,40 @@
 
       </div> <!--end home-about-->
       
-      <div id="home-philosophy">
+      <div id="make">
          <h3> Philosophy </h3>
-         <p> I’m a jane-of-all-trades because my interests vary widely but what I’ve realized 
-               is that I just like to make things work/happen. Partial philosophy.  </p>
          <p> This is where philosophy should go, it should be the same here as on the about page</p>
-      </div> <!--end home-philosophy-->
+      </div> <!--end philosophy-->
    </div>   <!--end content-->
 
-   <footer>
+   <div id="footer">
       <div id="footer-contact">
+         <h3> Contact Me</h3>
+         <form action="#" method="post">
+          <fieldset>
 
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" />
+        
+            <label for="email">Email</label>
+           <input type="email" id="email" placeholder="Your email address" />
+
+            <label for= "message">Message</label>
+            <textarea id="message" placeholder="Your message"></textarea>
+      
+            <input type="submit" value="Send Message" />
+         </fieldset>
+         </form>
+
+      <p> or you can find me on LinkedIN</p>
       </div> <!--end footer-contact-->
 
       <div id="creative-commons">
-         <p>Licensed under Creative Commons </br> Source hosted at Github </p>
+         <p>Licensed under Creative Commons </br>Source hosted at Github </p>
          
       </div> <!--end creative-commons-->
-   </footer>
-
+   </div> <!--end footer-->
+ 
 
 </body>
 
