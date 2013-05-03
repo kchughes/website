@@ -99,7 +99,7 @@ div#content p, div#content h3{
    
 }
 
-div#content, div#about {
+div#content {
    border-left: 5px solid #7AA496;
    background: rgba(197, 214, 215, 0.5);
    border-top-right-radius: 8px;
@@ -111,7 +111,8 @@ div#content h3 {
 }
 
 div#home-about, div#make,
-div#about, div#philosophy {
+div#about, div#philosophy,
+div#bio, div#stats {
    margin: auto 17px 20px 17px;
 }
 
@@ -141,8 +142,29 @@ div#home-about {
 }
 
 div#about {
-   border-left: #8A7BA3;
+   border-left: 5px solid #8A7BA3;
+   background: rgba(201, 197, 214, 0.5);
+   border-top-right-radius: 8px;
+   border-bottom-right-radius: 8px;
+   width: 90%;
 }
+
+div#about h3 {
+   color: #8A7BA3;
+   padding-top: 1em;
+}
+
+div#stats {
+   background: #8A7BA3;
+   border-top-left-radius: 8px;
+   border-bottom-left-radius: 8px;
+   width: 90%;
+}
+div#stats p, div#stats ul, 
+div#stats h3, div#stats h4 {
+      margin: auto 17px 20px 17px;
+}
+
 /***  Contact Form   ***/
 
 form {
@@ -207,6 +229,7 @@ div#footer {
     -webkit-box-shadow: inset 6px -7px 7px -9px #000; 
     -moz-box-shadow: inset 6px -7px 7px -9px #000; 
     box-shadow: inset 3px 6px 15px -4px #000;
+   width: 90%;
 }
 
 div#creative-commons {
