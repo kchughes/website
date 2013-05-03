@@ -1,1 +1,91 @@
+/* screen.css: Screen Styles */
+
+
+body {
+   margin: auto 11%; /** 143.5/1292=.111  **/
+}
+
+h1, h2, h3 {
+   font-family: "Josefin Sans", Arial, sans-serif;
+   margin: 15px auto 0px auto;
+}
+
+h3 {
+   margin-top: 10px;
+   font-size: 1.2em;
+}
+
+p, a {
+   font-family: Muli /** "Open Sans Condensed" **/, Arial, sans-serif;
+   margin: 5px auto;
+}
+
+a {
+   text-decoration: none;
+}
+
+/***  Header   ***/
+
+div#header {
+   margin-bottom: 20px;
+}
+
+div#logo {
+   float: left;
+}
+
+/***  Navigation  ***/
+
+nav#main ul {
+   float: left;
+}
+
+nav#main ul li{
+   display: inline;
+   margin: 15px;
+}
    
+
+/***  Big Typography ***/
+
+div#home-words {
+   clear: both;
+   display: block;
+   width: 100%;
+   margin: 30px auto;
+}
+
+div#home-words h1 {
+   margin: 0 auto;
+   text-align: center;
+}
+
+div#home-about {
+   float: left;
+}
+
+@media screen (min-width: 1000px) {
+   div#home-philosophy {
+      width:  50%;   /**   649/1292= .5023   **/
+}
+}
+
+div#home-philosophy {
+   float: left;
+}
+
+/***  Footer   ***/
+
+footer {
+   margin-top: 30px;
+}
+
+div#creative-commons {
+   font-size: .7em;
+}
+
+
+
+
+
+
