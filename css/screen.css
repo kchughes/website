@@ -6,7 +6,7 @@ body {
    margin: auto 8%; /** 143.5/1292=.111  **/
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
    font-family: "Josefin Sans", Arial, sans-serif;
    margin: 15px auto 0px auto;
 }
@@ -44,6 +44,7 @@ div#logo {
 
 nav#main ul {
    float: left;
+   margin: 20px auto;
 }
 
 nav#main ul li{
@@ -53,14 +54,14 @@ nav#main ul li{
 
 a.nav-home, a.nav-about, 
 a.nav-work, a.nav-contact {
-    width: 14%;     
+    width: 23%;     
     float: left;
     padding: 30px 45px 7px 15px; 
     margin: 0px;
     border-radius: 18px;
-    -webkit-box-shadow: inset 6px -7px 7px -9px #000; 
+   /** -webkit-box-shadow: inset 6px -7px 7px -9px #000; 
     -moz-box-shadow: inset 6px -7px 7px -9px #000; 
-    box-shadow: inset 3px -6px 7px -8px #000;
+    box-shadow: inset 3px -6px 7px -8px #000; **/
 }
 
 nav#main a {
@@ -92,12 +93,23 @@ a.nav-contact {
 }
 
 
+
 /***  Big Typography ***/
 
-div#content p, div#content h3{
-   line-height: 1.4em;
-   
+div#home-words, div#words {
+   clear: both;
+   display: block;
+   width: 100%;
+   margin: 13px auto;
 }
+div#home-words h1, div#words h1 {
+   margin: 0 auto;
+   text-align: center;
+}
+
+
+
+/*** Home Page ***/
 
 div#content {
    border-left: 5px solid #7AA496;
@@ -106,64 +118,51 @@ div#content {
    border-bottom-right-radius: 8px;
    width: 100%;
 }
-
 div#content h3 {
    color: #7AA496;
 }
 
-div#home-about, div#make,
-div#about, div#philosophy,
-div#bio, div#stats {
-   margin: auto 17px 20px 17px;
+/*** Everything but Home Page Content ***/
+div#left-container p, div#right-container h3,
+div#right-container p, div#right-container h3 {
+   line-height: 1.4em;
 }
 
-div#make {
-   padding-bottom: 20px;
-}
-div#home-words, div#words {
-   clear: both;
-   display: block;
-   width: 100%;
-   margin: 13px auto;
-}
-
-div#home-words h1, div#words h1 {
-   margin: 0 auto;
-   text-align: center;
+div.content {
+   margin: auto 17px 30px 17px;
+   padding: 10px;
 }
 
 div#home-about {
    float: left;
 }
 
-@media screen (min-width: 1000px) {
-   div#home-philosophy {
-      width:  50%;   /**   649/1292= .5023   **/
-}
-}
-
-div#about {
-   border-left: 5px solid #8A7BA3;
-   background: rgba(201, 197, 214, 0.5);
+div#left-container {
    border-top-right-radius: 8px;
    border-bottom-right-radius: 8px;
-   width: 90%;
+   width: 100%;
+   margin-bottom: 0px;
 }
 
-div#about h3 {
+div.about {
+   border-left: 5px solid #8A7BA3;
+   background: rgba(201, 197, 214, 0.5);
+}
+
+div.about h3 {
    color: #8A7BA3;
-   padding-top: 1em;
 }
 
-div#stats {
-   background: #8A7BA3;
-   border-top-left-radius: 8px;
-   border-bottom-left-radius: 8px;
-   width: 90%;
+div#right-container {
+  /** border-top-left-radius: 8px;
+   border-bottom-left-radius: 8px; **/
+   border-radius: 8px;
+   width: 100%;
+   margin-top: 0px;
 }
-div#stats p, div#stats ul, 
-div#stats h3, div#stats h4 {
-      margin: auto 17px 20px 17px;
+
+div.about-stats {
+      background: #8A7BA3;
 }
 
 /***  Contact Form   ***/
@@ -222,15 +221,17 @@ textarea {
 /***  Footer   ***/
 
 div#footer {
-   margin-top: 30px;
+   margin: 15px auto;
    padding: 10px 20px;
-   border-radius: 8px;
+   border-top: 5px solid #9B9B9B;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
    background-color: #DDDDDD; 
    color: #fff;
-   -webkit-box-shadow: inset 6px -7px 7px -9px #000; 
+  /* -webkit-box-shadow: inset 6px -7px 7px -9px #000; 
     -moz-box-shadow: inset 6px -7px 7px -9px #000; 
-    box-shadow: inset 3px 6px 15px -4px #9B9B9B; 
-   width: 90%;
+    box-shadow: inset 3px 6px 15px -4px #9B9B9B;  */
+   width: 85%;
 }
 
 div#creative-commons {
