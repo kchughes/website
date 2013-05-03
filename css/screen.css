@@ -104,6 +104,7 @@ div#content {
    background: rgba(197, 214, 215, 0.5);
    border-top-right-radius: 8px;
    border-bottom-right-radius: 8px;
+   width: 100%;
 }
 
 div#content h3 {
@@ -167,8 +168,8 @@ div#stats h3, div#stats h4 {
 
 /***  Contact Form   ***/
 
-form {
-   border: none;
+fieldset {
+   border: 0;
    margin: auto;
 }
 
@@ -224,11 +225,11 @@ div#footer {
    margin-top: 30px;
    padding: 10px 20px;
    border-radius: 8px;
-   background-color: #7F78A0;
+   background-color: #DDDDDD; 
    color: #fff;
-    -webkit-box-shadow: inset 6px -7px 7px -9px #000; 
+   -webkit-box-shadow: inset 6px -7px 7px -9px #000; 
     -moz-box-shadow: inset 6px -7px 7px -9px #000; 
-    box-shadow: inset 3px 6px 15px -4px #000;
+    box-shadow: inset 3px 6px 15px -4px #9B9B9B; 
    width: 90%;
 }
 
