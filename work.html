@@ -14,7 +14,9 @@
 	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/colorbox.css" />
 
-	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/jquery/colorbox/jquery.colorbox.js"></script>
+
 </head>
 
 <body>
@@ -51,7 +53,31 @@
 
          <h3>Selected Work</h3>
          <div class="selected">
-      <li class="item"> <a class="gallery" href="media/img/portfolio/2011holidaycard.png"  title="Holiday Card"> <img src="media/img/portfolio/tn-2011holidaycard.png"  alt="Holiday Card" /> </a></li>
+      <ul>
+      <li class="item"> <a class="gallery" href="media/img/portfolio/2011holidaycard.jpg"  title="Holiday Card"> <img src="media/img/portfolio/tn-2011holidaycard.png"  alt="Holiday Card" /> </a></li> 
+      <li class="description"> 
+         <p>Holiday Card</p>
+         <dl>
+            <dt>Project:</dt><dd> Holiday Card </dd>
+            <dt>Audience:</dt><dd> Internal and External stakeholders </dd>
+            <dt>Medium:</dt><dd> HTML Email </dd>
+            <dt>Tools:</dt><dd> Photoshop, Constant Contact, HTML</dd>
+            <dt>Favorite Part of Project:</dt><dd> The way the lights of the trees seem to glow.</dd>
+         </dl> 
+         </li>
+
+      <li class="item"> <a class="gallery" href="media/img/portfolio/2011holidaycard.jpg"  title="Holiday Card"> <img src="media/img/portfolio/tn-2011holidaycard.png"  alt="Holiday Card" /> </a></li> 
+      <li class="description"> 
+         <p>Holiday Card</p>
+         <dl>
+            <dt>Project:</dt><dd> Holiday Card </dd>
+            <dt>Audience:</dt><dd> Internal and External stakeholders </dd>
+            <dt>Medium:</dt><dd> HTML Email </dd>
+            <dt>Tools:</dt><dd> Photoshop, Constant Contact, HTML</dd>
+            <dt>Favorite Part of Project:</dt><dd> The way the lights of the trees seem to glow.</dd>
+         </dl> 
+         </li>
+      </ul>
          </div> <!--end selected-->
 
       </div> <!--end content and about-->
@@ -60,9 +86,24 @@
 
 <div id="right-container" class="work-stats">
    <div class="content">
-         <h3> Miscellaneous Stats </h3>
-            <h4> Hobbies </h4>
-            <h4> Favorite Websites </h4>
+         <h3> Skillsets </h3>
+
+<h4>Content </h4> 
+   <h5>Editing</h5>
+      <dl>
+      <dt> Range:</dt><dd>All types of writing</dd>
+      <dt> Scope:</dt><dd>Proofreading, grammar, overall message and organization</dd>
+
+      <dt>Questions I can help answer and solve:  </dt>
+<dd>does it really say what you think it says or what you want it to, how else could it be perceived, expert at nixing mixed messages, how does it flow with overall message</dd>
+
+<h5>Writing</h5>
+<dt>Range:</dt></dd> more technical and business oriented (opposed to marketing)- basically make message easy to understand (see editing)</dd>
+
+<dt>Questions</dt>
+<dd>What images would work well to illustrate or illuminate the text/message?</dd>
+</dl>
+</div> <!--end content-->
 
          </div> <!--end stats-->
    </div> <!--end right-container-->
@@ -96,6 +137,9 @@
       </div> <!--end creative-commons-->
    </div> <!--end footer-->
 
+<script>
+	jQuery('a.gallery').colorbox();
+</script>
 
 </body>
 
