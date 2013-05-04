@@ -37,25 +37,46 @@ div#header {
    background: yellow;
 }
 
-div#logo {
+div#logo img {
    float: left;
 }
 
 div#logo img {
    width: 100%;
 }
-
+@media screen and (min-width: 768px) {
+div#logo img {
+   width: 30%;
+}
+}
 /***  Navigation  ***/
+
+nav#main {
+   float: left;
+}
 
 nav#main ul {
    float: left;
-   margin: 20px auto;
+   margin: 20px 5%;
 }
-
+@media screen and (min-width: 768px) {
+nav#main ul {
+   float: left;
+   margin: 20px 5%;
+   width: 70%
+}
+}
 nav#main ul li{
    display: inline;
    margin: 15px;
 }
+
+/** @media screen and (min-width: 480px) {
+   nav#main ul li{
+      display: inline;
+      margin: 30px;
+}
+} **/
 
 a.nav-home, a.nav-about, 
 a.nav-work, a.nav-contact {
@@ -68,6 +89,15 @@ a.nav-work, a.nav-contact {
     -moz-box-shadow: inset 6px -7px 7px -9px #000; 
     box-shadow: inset 3px -6px 7px -8px #000; **/
 }
+
+@media screen and (min-width: 480px) {
+   a.nav-home, a.nav-about, 
+   a.nav-work, a.nav-contact {
+      width: 27%;
+}
+}
+
+
 
 nav#main a {
    font-size: .9em;
@@ -151,8 +181,14 @@ div#main-container {
    border-top-right-radius: 8px;
    border-bottom-right-radius: 8px;
    width: 100%;
+   float: left;
 }
 
+@media screen and (min-width: 768px) {
+div#main-container {
+   width: 65%;
+}
+}
 div.home h3 {
    color: #7AA496;
 }
@@ -182,6 +218,13 @@ div#left-container {
    border-bottom-right-radius: 8px;
    width: 100%;
    margin-bottom: 0px;
+   float: left;
+}
+
+@media screen and (min-width: 768px) {
+div#left-container {
+   width: 34%;
+}
 }
 
 div.about {
@@ -292,6 +335,7 @@ textarea {
 /***  Footer   ***/
 
 div#footer {
+   clear: both;
    margin: 15px auto;
    padding: 10px 20px;
    border-top: 5px solid #9B9B9B;
