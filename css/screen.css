@@ -6,7 +6,7 @@ body {
    margin: auto 6%; /** 143.5/1292=.111  **/
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, hr {
    font-family: "Josefin Sans", Arial, sans-serif;
    font-weight: bold;
 }
@@ -402,6 +402,12 @@ fieldset {
 }
 
 form {
+   max-width: 725px;
+}
+fieldset.part-two, fieldset.part-one {
+   float: left;
+}
+fieldset {
    max-width:  360px;
 }
 
@@ -426,10 +432,17 @@ input {
     box-shadow: inset 2px 5px 5px -7px #000;
 }
 
+fieldset.part-two label {
+   margin-top: 2em;
+}
+
+fieldset.submit {
+   margin: auto;
+}
 textarea {
     width: 95%;
     max-width: 250px;
-    height: 150px;
+    height: 100px;
     border-radius: 7px;
     margin: .3em 2em 0em 0em;
     float: left;
@@ -485,16 +498,67 @@ div#footer {
 }
 
 
-div#footer-contact {
+div#footer-form {
    display: inline;
 }
 
-div#footer-contact hr{
+div.or {
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   margin-top: 1.5em;
+}
+
+
+div.or hr {
    width: 40%;
 }
 
+hr.left {
+   float: left;
+}
+
+hr.right {
+   float: right;
+}
+
+@media screen and (min-width: 640px) {
+   div.or hr {
+   display: none;
+}
+
+@media screen and (min-width: 640px) {
+   div#footer-form {
+      width: 60%;
+}
+}
+@media screen and (min-width: 640px) {
+   div.or {
+   float: left;
+   width: 39%;
+   border-left: 1px solid white;
+   margin: 0px;
+}
+}
+
+div.footer-contact {
+    width: 23%;
+    max-width: 75px;     
+    float: left;
+    padding: 30px 35px 7px 15px; 
+    margin: 2px 2px;
+    border-radius: 18px;
+}
+
+div.or img {
+   margin-top: 1.5em;
+}
+
+
 div#creative-commons {
    font-size: .7em;
+   margin-top: 3em;
 }
 
 
