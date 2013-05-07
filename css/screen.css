@@ -19,13 +19,13 @@ h3 {
 }
 
 h4 {
-   font-size: 1.3em;
+   font-size: 1.2em;
    margin: 15px auto 0px auto;
 
 }
 
 h5 {
-   font-size: 1.1em;
+   font-size: 1em;
 }
 
 p, a, li, label {
@@ -34,6 +34,11 @@ p, a, li, label {
    font-size: 1em;
 }
 
+small {
+   font-family: Muli /** "Open Sans Condensed" **/, Arial, sans-serif;
+   font-size: .8em;
+   color: #8A7BA3;
+}
 a {
    text-decoration: none;
 }
@@ -249,33 +254,58 @@ div#main-container {
 @media screen and (min-width: 768px) {
 div#main-container {
    width: 65%;
+   margin: auto 20px 20px auto;
+   margin: 0px;
    float: left;
-   margin: auto 15px 20px auto;
 }
 }
 div.home h3 {
    color: #7AA496;
 }
 
+
 div.home-philosophy {
    border-left: 5px solid #7AA496;
    background: rgba(197, 214, 215, 0.5);
    float: left;
+   width: 100%;
 }
+
 @media screen and (min-width: 768px) {
-   div.home-philosophy {
-       width: 30%;
+   div#right-container{
+      width: 34%;
+      float: left;
 }
 }
-hr {
-     
+
+/** 
+@media screen and (min-width: 768px) {
+div#home-portfolio {
+   width: 60%;
 }
+}
+div#home-portfolio img {
+   width: 40%;
+}
+
+.caption {
+   font-size: .9em;
+   float: left;
+   margin: 0px;
+   display: block;
+} 
+**/
+
+
 /*** Everything but Home Page Content ***/
 div#left-container p, div#right-container h3,
 div#right-container p, div#right-container h3 {
    line-height: 1.4em;
 }
 
+div#right-container p {
+   font-size: .9em;
+}
 div.content {
    margin: auto 17px 30px 17px;
    padding: 10px;
