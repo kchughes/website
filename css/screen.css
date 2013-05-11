@@ -11,8 +11,6 @@ h1, h2, h3, h4, hr {
    font-weight: bold;
 }
 
-
-
 h3 {
    font-size: 1.4em;
    margin: 15px auto 0px auto;
@@ -158,8 +156,6 @@ a.nav-work, a.nav-contact {
 }
 }
 
-
-
 nav#main a {
    font-size: .9em;
     color: #E5E5E5; 
@@ -251,30 +247,35 @@ div#main-container {
    color: #5D5E5E;
 }
 
+#wrapper {
+   width: 60%;
+   float: left;
+}
 @media screen and (min-width: 768px) {
 div#main-container {
-   width: 65%;
-   margin: auto 20px 20px auto;
-   margin: 0px;
+   width: 96%;
    float: left;
 }
 }
 div.home h3 {
    color: #7AA496;
 }
+div#home-portfolio {
+   clear: both;
+   margin-top: 100px;
+}
 
-
-div.home-philosophy {
+.home-philosophy {
    border-left: 5px solid #7AA496;
    background: rgba(197, 214, 215, 0.5);
-   float: left;
    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
    div#right-container{
-      width: 34%;
-      float: left;
+      width: 30%;
+   float: left;
+   
 }
 }
 
@@ -313,7 +314,7 @@ div.content {
 
 div#home-about {
    float: left;
-}
+} 
 
 div#left-container {
    border-top-right-radius: 8px;
@@ -347,7 +348,6 @@ div.about-stats {
 }
 }
 
-
 div.about h3 {
    color: #8A7BA3;
 }
@@ -359,6 +359,7 @@ div.work {
 div.selected img {
    width: 30%;
 }
+/**
 div#right-container {
    border-top-right-radius: 8px;
    border-bottom-right-radius: 8px; 
@@ -371,7 +372,7 @@ div#right-container {
    width: 30%;
    float: left;
 }
-}
+}   **/
 
 div.work-approach {
    border-left: 8px solid #7B82A3;
