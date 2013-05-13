@@ -589,9 +589,9 @@ input {
     box-shadow: inset 2px 5px 5px -7px #000;
 }
 
-fieldset.part-two label {
+/*fieldset.part-two label {
    margin-top: 2em;
-}
+}*/
 
 fieldset.submit {
    margin: auto;
