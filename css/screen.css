@@ -243,7 +243,13 @@ div#main-container {
    color: #5D5E5E;
 }
 
-#wrapper {
+@media screen and (min-width: 640px) {
+div#main-container {
+   width: 64%;
+   float: left;
+}
+}
+/**#wrapper {
    width: 100%;
    float: left;
 }
@@ -251,7 +257,7 @@ div#main-container {
 #wrapper {
    width: 64%;
 }
-}
+}**/
 
 /**@media screen and (min-width: 768px) {
 div#main-container {
@@ -263,39 +269,7 @@ div#main-container {
 div.home h3 {
    color: #7AA496;
 }
-/**div#home-portfolio {
-   clear: both;
-}**/
 
-div#home-portfolio img{
-   border-radius: 5px;
-   width: 100%;
-}
-@media screen and (min-width: 480px) {
-div#home-portfolio img{
-   width: 75%;
-}
-}
-
-@media screen and (min-width: 640px) {
-div#home-portfolio img{
-   width: 40%;
-}
-}
-@media screen and (min-width: 768px) {
-div#home-portfolio img{
-   width: 30%;
-}
-}
-
-ul.quick li{
-   display: inline;
-   margin-left: 10px;
-}
-
-.more {
-   text-align: right;
-}
 /**
 div#home-portfolio img{
    border-radius: 5px;
@@ -313,13 +287,45 @@ div#right-container {
 }
 @media screen and (min-width: 640px) {
    div#right-container{
-   width: 32%;
+   width: 31%;
    clear: none;
    float: left;
-   margin-left: 3%;
+   margin-left: 2%;
+}
+}
+div#home-portfolio {
+   clear: both;
+}
+
+div#home-portfolio img{
+   border-radius: 5px;
+   width: 90%;
+}
+@media screen and (min-width: 480px) {
+div#home-portfolio img{
+   width: 48%;
 }
 }
 
+@media screen and (min-width: 640px) {
+div#home-portfolio img{
+   width: 40%;
+}
+}
+@media screen and (min-width: 1024px) {
+div#home-portfolio img{
+   width: 23%;
+}
+}
+
+ul.quick li{
+   display: inline;
+   margin-left: 10px;
+}
+
+.more {
+   text-align: right;
+}
 /** 
 @media screen and (min-width: 768px) {
 div#home-portfolio {
@@ -347,20 +353,25 @@ div#right-container p, div#right-container h3 {
 
 div#right-container p {
    font-size: .9em;
+   
 }
 div.content {
-   margin: auto 17px 30px 17px;
+   margin: auto 10px 20px 10px;
    padding: 10px;
 }
+/**div.content p{
+   margin: auto 17px 30px 17px;
+}**/
 
-@media screen and (min-width: 640px) {
+
+@media screen and (min-width: 768px) {
    div.content{
-      margin: auto 10px 20px 10px;
+   margin: auto 13px 30px 13px;
 }
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1024px) {
    div.content{
-      margin: auto 10px 20px 10px;
+   margin: auto 17px 30px 17px;
 }
 }
 div#home-about {
