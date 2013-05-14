@@ -343,8 +343,15 @@ div#home-portfolio img {
    display: block;
 } 
 **/
-
-
+/** All Portfolio Images **/
+ul img {
+   opacity: .5;
+   -moz-opacity: .5;
+}
+ul img:hover {
+   opacity: 9;
+   -moz-opacity: 9;
+}
 /*** Everything but Home Page Content ***/
 div#left-container p, div#right-container h3,
 div#right-container p, div#right-container h3 {
@@ -708,8 +715,9 @@ div.footer-contact {
     border-radius: 18px;
 }
 
-div.or img {
+img.click {
    margin-top: 1.5em;
+   width: 20%;
 }
 
 
