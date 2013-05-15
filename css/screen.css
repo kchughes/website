@@ -231,6 +231,10 @@ div#home-words h1, div#words h1 {
       font-size: 7em;
 }
 }
+.one {
+font-weight: 400;
+}
+
 
 /*** Home Page ***/
 
@@ -563,31 +567,28 @@ li.description {
 fieldset {
    border: 0;
    margin: auto;
+   max-width:  500px;
+   float: left;
 }
 
 form {
-   max-width: 725px;
+   max-width: 805px;
 }
-fieldset.part-two, fieldset.part-one {
-   float: left;
-}
-fieldset {
-   max-width:  360px;
-}
+/**div#footer-form {
+   display: inline;
+}**/
 
 label { 
     float: left;
-    clear: left; 
     margin: 1em 2em 0em 0em;
     font-size: .9em;
     color: #363642;
     text-transform: uppercase;
 }
-
 input {
    clear: left;
     width: 95%;
-    max-width: 250px;
+    max-width: 500px;
     height: 2.5em;
     border-radius: 5px;
     margin: .3em 3em 0em 0em;
@@ -596,16 +597,32 @@ input {
     box-shadow: inset 2px 5px 5px -7px #000;
 }
 
-/*fieldset.part-two label {
-   margin-top: 2em;
-}*/
-
 fieldset.submit {
    margin: auto;
+   width: 100%;
+}
+
+@media screen and (min-width: 480px)
+   fieldset.submit {
+   width: 70%;
+}
+}
+fieldset.part-one {
+   width: 93%;
+   max-width: 275px;
+}
+@media screen and (min-width: 640px) {
+   fieldset.part-one{
+   width: 40%;
+   clear: none;
+   display: inline-block;
+}
+}
+fieldset.part-two {
+   width: 100%;
+   max-width: 500px;
 }
 textarea {
-    width: 95%;
-    max-width: 250px;
     height: 100px;
     border-radius: 7px;
     margin: .3em 2em 0em 0em;
@@ -615,7 +632,6 @@ textarea {
     -moz-box-shadow: inset 1px 2px 5px -2px #000; 
     box-shadow: inset 1px 2px 5px -2px #000;
 }
-
 @media screen and (min-width: 370px) {
    textarea, input {
       margin-bottom: 5px;
@@ -629,7 +645,7 @@ textarea {
    input[type=submit] {
     float: left;  
     clear: left;  
-    width: 90%;
+    /**width: 90%;**/
     height: 40px;
     margin-top: 1.5em;
     border-radius: 7px;
@@ -662,16 +678,15 @@ div#footer {
 }
 
 
-div#footer-form {
-   display: inline;
-}
+
 
 div.or {
+   clear: both;
    width: 90%;
    margin-left: auto;
    margin-right: auto;
    text-align: center;
-   margin-top: 1.5em;
+   padding-top: 1.5em;
 }
 
 
@@ -687,11 +702,11 @@ hr.right {
    float: right;
 }
 
-@media screen and (min-width: 640px) {
+/*@media screen and (min-width: 640px) {
    div.or hr {
    display: none;
 }
-
+}
 @media screen and (min-width: 640px) {
    div#footer-form {
       width: 60%;
@@ -703,7 +718,7 @@ hr.right {
    width: 39%;
    border-left: 1px solid white;
    margin: 0px;
-}
+}*/
 }
 
 div.footer-contact {
@@ -715,15 +730,34 @@ div.footer-contact {
     border-radius: 18px;
 }
 
-img.click {
+/**div#click {
+   width: 100%;
+   max-width: 325px;
+   margin: auto;
+   float: left;
+   background-color: red;
+}**/
+
+div#click {
    margin-top: 1.5em;
-   width: 20%;
 }
+img.linked {
+   width: 55%;
+   max-width: 225px;
+}
+img.email {
+   width: 40%;
+   max-width: 175px;
+}
+/**div#footer img {
+   width: 20%;
+}**/
 
 
 div#creative-commons {
    font-size: .7em;
-   margin-top: 3em;
+   padding-top: 3em;
+   clear: both;
 }
 
 
