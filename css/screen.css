@@ -248,9 +248,10 @@ div#main-container {
 }
 
 @media screen and (min-width: 640px) {
-div#main-container {
+div#main-container, div#left-container {
    width: 64%;
    float: left;
+   margin-right: 2%;
 }
 }
 /**#wrapper {
@@ -273,19 +274,11 @@ div#main-container {
 div.home h3 {
    color: #7AA496;
 }
-
-/**
-div#home-portfolio img{
-   border-radius: 5px;
-   width: 30%;
-}
-**/
 .home-philosophy {
    border-left: 5px solid #7AA496;
    background: rgba(197, 214, 215, 0.5);
    width: 100%;
 }
-
 div#right-container {
    clear: both;
 }
@@ -294,13 +287,11 @@ div#right-container {
    width: 31%;
    clear: none;
    float: left;
-   margin-left: 2%;
 }
 }
 div#home-portfolio {
    clear: both;
 }
-
 div#home-portfolio img{
    border-radius: 5px;
    width: 90%;
@@ -310,7 +301,6 @@ div#home-portfolio img{
    width: 48%;
 }
 }
-
 @media screen and (min-width: 640px) {
 div#home-portfolio img{
    width: 40%;
@@ -321,7 +311,6 @@ div#home-portfolio img{
    width: 23%;
 }
 }
-
 ul.quick li{
    display: inline;
    margin-left: 10px;
@@ -364,7 +353,6 @@ div#right-container p, div#right-container h3 {
 
 div#right-container p {
    font-size: .9em;
-   
 }
 div.content {
    margin: auto 10px 20px 10px;
@@ -373,8 +361,6 @@ div.content {
 /**div.content p{
    margin: auto 17px 30px 17px;
 }**/
-
-
 @media screen and (min-width: 768px) {
    div.content{
    margin: auto 13px 30px 13px;
@@ -389,46 +375,49 @@ div#home-about {
    float: left;
 } 
 
+
+
+/*** Left Container, All But Home ***/
 div#left-container {
    border-top-right-radius: 8px;
    border-bottom-right-radius: 8px;
    width: 100%;
    margin-bottom: 0px;
+   border-right: 5px solid #8A918F;
+   padding-bottom: 20px;
 }
-
 @media screen and (min-width: 640px) {
 div#left-container {
-   width: 65%;
+   width: 63%;
    float: left;
-   margin-right: 3%;
+   margin-right: 1%;
 }
 }
 
+
+
+
+
+/*** About Page  ***/
 div.about {
-  border-left: 5px solid #8A7BA3;
-   border-radius: 12px;   
+      border-left: 8px solid #8A7BA3;
 }
-
 div.about-stats {
-  /** border-left: 5px solid #8A7BA3;**/
-   background: rgba(201, 197, 214, 0.5);
   border-left: 5px solid #8A7BA3;
+   background: rgba(201, 197, 214, 0.5);
 }
 @media screen and (min-width: 640px) {
    div.about-stats {
-   border-right: 5px solid #8A7BA3;
-   border-left: none;
 }
 }
-
 div.about h3 {
    color: #8A7BA3;
 }
 
+/*** Work Page ***/ 
 div.work {
    border-left: 8px solid #7B82A3;
 }
-
 div.selected img {
    width: 30%;
 }
@@ -676,10 +665,6 @@ div#footer {
    width: 90%;
    margin-top: 20px;
 }
-
-
-
-
 div.or {
    clear: both;
    width: 90%;
@@ -688,16 +673,12 @@ div.or {
    text-align: center;
    padding-top: 1.5em;
 }
-
-
 div.or hr {
    width: 40%;
 }
-
 hr.left {
    float: left;
 }
-
 hr.right {
    float: right;
 }
@@ -720,7 +701,6 @@ hr.right {
    margin: 0px;
 }*/
 }
-
 div.footer-contact {
     width: 23%;
     max-width: 75px;     
@@ -729,15 +709,6 @@ div.footer-contact {
     margin: 2px 2px;
     border-radius: 18px;
 }
-
-/**div#click {
-   width: 100%;
-   max-width: 325px;
-   margin: auto;
-   float: left;
-   background-color: red;
-}**/
-
 div#click {
    margin-top: 1.5em;
 }
@@ -749,11 +720,6 @@ img.email {
    width: 40%;
    max-width: 175px;
 }
-/**div#footer img {
-   width: 20%;
-}**/
-
-
 div#creative-commons {
    font-size: .7em;
    padding-top: 3em;
