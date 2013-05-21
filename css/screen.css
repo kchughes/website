@@ -665,6 +665,18 @@ div#footer {
    width: 90%;
    margin-top: 20px;
 }
+
+@media screen and (min-width: 480px) {
+  div#footer {
+    width: 95%;
+}
+}
+
+/** @media screen and (min-width: 1024px) {
+  div#footer {
+    width: 100%;
+}
+}**/
 div.or {
    clear: both;
    width: 90%;
