@@ -251,7 +251,7 @@ div#main-container {
 div#main-container, div#left-container {
    width: 64%;
    float: left;
-   margin-right: 2%;
+   margin-right: 1%;
 }
 }
 /**#wrapper {
@@ -437,7 +437,7 @@ div#right-container {
 }   **/
 
 div.work-approach {
-   border-left: 8px solid #7B82A3;
+   border-left: 5px solid #7B82A3;
    background: rgba(197, 203, 211, 0.5);
 }
 /** div.about-stats {
