@@ -247,13 +247,13 @@ div#main-container {
    color: #5D5E5E;
 }
 
-@media screen and (min-width: 640px) {
+/**@media screen and (min-width: 640px) {
 div#main-container, div#left-container {
    width: 64%;
    float: left;
    margin-right: 1%;
 }
-}
+}**/
 /**#wrapper {
    width: 100%;
    float: left;
@@ -273,13 +273,25 @@ div#main-container {
    
 div.home h3 {
    color: #7AA496;
+   margin: auto;
 }
-.home-philosophy {
+
+div.home p {
+   line-height: 1.7em;
+}
+
+@media screen and (min-width: 768px) {
+div.home p {
+   font-size: 1.3em;
+   line-height: 1.6em;
+}
+}
+/**.home-philosophy {
    border-left: 5px solid #7AA496;
    background: rgba(197, 214, 215, 0.5);
    width: 100%;
-}
-div#right-container {
+}**/
+div#right-container, div#second-container {
    clear: both;
 }
 @media screen and (min-width: 640px) {
@@ -319,6 +331,28 @@ ul.quick li{
 .more {
    text-align: right;
 }
+
+div.home-philosophy h3 {
+   margin: auto;
+}
+
+div.box {
+   float: left;
+   margin: 2px auto;
+}
+
+@media screen and (min-width: 480px) {
+div.box {
+   margin: 5px auto;
+}
+}
+@media screen and (min-width: 768px) {
+div.box {
+   width: 31%;
+   margin: auto 1%;
+}
+}
+
 /** 
 @media screen and (min-width: 768px) {
 div#home-portfolio {
@@ -374,8 +408,6 @@ div.content {
 div#home-about {
    float: left;
 } 
-
-
 
 /*** Left Container, All But Home ***/
 div#left-container {
