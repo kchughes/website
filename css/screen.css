@@ -34,7 +34,7 @@ p, a, li, label {
 
 small {
    font-family: Muli /** "Open Sans Condensed" **/, Arial, sans-serif;
-   font-size: .8em;
+   font-size: .7em;
    color: #8A7BA3;
 }
 a {
@@ -158,6 +158,10 @@ nav#main a {
    font-weight: bold;
 }
 
+nav#main a:hover, nav#main a:active {
+  opacity: .7;
+   -moz-opacity: .7;
+}
 a.nav-home {
     /** background-color: #434157; **/
    border-bottom-left-radius: 8px;
@@ -195,6 +199,12 @@ div#home-words, div#words {
 #home-words h1 {
    padding: 10px 0px;
    color: #8A7BA3;
+}
+div.work-words h1 {
+   color: #A39C7B;
+}
+div.about-words h1 {
+   color: #7B82A3;
 }
 div#home-words h1, div#words h1 {
    margin: 0 auto;
@@ -385,8 +395,8 @@ div#right-container p, div#right-container h3 {
    line-height: 1.4em;
 }
 
-div#right-container p {
-   font-size: .9em;
+div#right-container p, div#right-container ul{
+   font-size: .85em;
 }
 div.content {
    margin: auto 10px 20px 10px;
@@ -435,11 +445,17 @@ div.about {
       border-left: 8px solid #8A7BA3;
 }
 div.about-stats {
-  border-left: 5px solid #8A7BA3;
+  border-left: 8px solid #8A7BA3;
    background: rgba(201, 197, 214, 0.5);
+   margin-top: 30px;
+}
+div.about-stats ul{
+   margin-left:15px;
 }
 @media screen and (min-width: 640px) {
    div.about-stats {
+     border-left: 5px solid #8A7BA3;
+      margin-top: auto;
 }
 }
 div.about h3 {
