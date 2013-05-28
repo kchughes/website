@@ -71,8 +71,6 @@ div#logo img {
    width: 100%;
 }
 
-
-
 /***  Navigation  ***/
 
 nav#main {
@@ -317,7 +315,39 @@ div#home-portfolio {
 div#home-portfolio img{
    border-radius: 5px;
    width: 90%;
+   display: block;
+   margin: 10px  auto;
 }
+
+/** MEDIA QUERIES FOR 3 IMAGES ACROSS **/
+@media screen and (min-width: 480px) {
+div#home-portfolio img{
+   width: 70%;
+}
+}
+@media screen and (min-width: 520px) {
+div#home-portfolio img{
+   width: 60%;
+}
+}
+@media screen and (min-width: 640px) {
+div#home-portfolio img{
+   width: 30%;
+   display: inline;
+}
+}
+@media screen and (min-width: 1024px) {
+div#home-portfolio img{
+   width: 25%;
+   margin: 15px;
+}
+}
+@media screen and (min-width: 1024px) {
+div#home-portfolio ul {
+   margin-left: 6%;
+}
+}
+/**  MEDIA QUERIES FOR 4 IMAGES ACROSS
 @media screen and (min-width: 480px) {
 div#home-portfolio img{
    width: 48%;
@@ -333,6 +363,7 @@ div#home-portfolio img{
    width: 23%;
 }
 }
+**/
 ul.quick li{
    display: inline;
    margin-left: 10px;
@@ -346,9 +377,13 @@ div.home-philosophy h3 {
    margin: auto;
 }
 
+
 div.box {
    float: left;
    margin: 2px auto;
+   padding: 8px;
+   width: 97%;
+   background: rgba(197, 214, 215, 0.5);
 }
 
 @media screen and (min-width: 480px) {
@@ -358,7 +393,7 @@ div.box {
 }
 @media screen and (min-width: 768px) {
 div.box {
-   width: 31%;
+   width: 29%;
    margin: auto 1%;
 }
 }
@@ -466,8 +501,11 @@ div.about h3 {
 div.work {
    border-left: 8px solid #7B82A3;
 }
+
 div.selected img {
    width: 30%;
+   margin-right: 20px;
+   margin-top: 20px;
 }
 /**
 div#right-container {
