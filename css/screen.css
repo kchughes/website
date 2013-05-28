@@ -6,7 +6,7 @@ body {
    margin: auto 6%; /** 143.5/1292=.111  **/
 }
 
-h1, h2, h3, h4, hr {
+h1, h2, h3, h4, hr, h4 a{
    font-family: "Josefin Sans", Arial, sans-serif;
    font-weight: bold;
 }
@@ -16,7 +16,7 @@ h3 {
    margin: 15px auto 0px auto;
 }
 
-h4 {
+h4, h4 a {
    font-size: 1.2em;
    margin: 15px auto 0px auto;
 
