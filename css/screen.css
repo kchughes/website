@@ -36,9 +36,12 @@ small {
    font-family: Muli /** "Open Sans Condensed" **/, Arial, sans-serif;
    font-size: .7em;
    color: #8A7BA3;
+   margin-top: 30px;
 }
+
 a {
    text-decoration: none;
+   color: #A39C7B;
 }
 
 /***  Header   ***/
@@ -195,7 +198,7 @@ div#home-words, div#words {
 }
 
 #home-words h1 {
-   padding: 10px 0px;
+   padding: 0px;
    color: #8A7BA3;
 }
 div.work-words h1 {
@@ -204,44 +207,56 @@ div.work-words h1 {
 div.about-words h1 {
    color: #7B82A3;
 }
-div#home-words h1, div#words h1 {
+
+div.contact-words h1 {
+   color: #7AA496;
+}
+div#home-words, div#words {
    margin: 0 auto;
    text-align: center;
-   font-size: 2.4em;
+   font-size: 1.3em;
+   /**line-height: 1.2em;**/
 }
 
 @media screen and (min-width: 480px) {
-   div#home-words h1, div#words h1 {
-      font-size: 3em;
+   div#home-words, div#words {
+      font-size: 1.6em;
 }
 } 
 
 @media screen and (min-width: 640px) {
-   div#home-words h1, div#words h1 {
-      font-size: 4em;
+   div#home-words, div#words {
+      font-size: 2em;
 }
 } 
 
 @media screen and (min-width: 768px) {
-   div#home-words h1, div#words h1 {
-      font-size: 5em;
+   div#home-words, div#words {
+      font-size: 2.6em;
 }
 }
 
 @media screen and (min-width: 1024px) {
-   div#home-words h1, div#words h1 {
-      font-size: 6em;
+   div#home-words, div#words {
+      font-size: 3em;
 }
 }
 
 @media screen and (min-width: 1292px) {
-   div#home-words h1, div#words h1 {
-      font-size: 7em;
+   div#home-words, div#words {
+      font-size: 3.3em;
 }
 }
-.one {
+
+@media screen and (min-width: 1292px) {
+  div.about-words {
+      font-size: 3em;
+      
+}
+}
+/**.one {
 font-weight: 400;
-}
+}**/
 
 
 /*** Home Page ***/
@@ -432,6 +447,7 @@ div#right-container p, div#right-container h3 {
 
 div#right-container p, div#right-container ul{
    font-size: .85em;
+
 }
 div.content {
    margin: auto 10px 20px 10px;
@@ -484,7 +500,11 @@ div.about-stats {
    background: rgba(201, 197, 214, 0.5);
    margin-top: 30px;
 }
-div.about-stats ul{
+
+ul.block {
+   display: inline;
+}
+div.about-stats ul, div.about-stats a, div.about-stats p{
    margin-left:15px;
 }
 @media screen and (min-width: 640px) {
@@ -506,6 +526,12 @@ div.selected img {
    width: 30%;
    margin-right: 20px;
    margin-top: 20px;
+   border-radius: 5px;
+
+}
+
+img.border {
+   border: 1px solid #C6D1D8;
 }
 /**
 div#right-container {
