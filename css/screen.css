@@ -34,14 +34,19 @@ p, a, li, label {
 
 small {
    font-family: Muli /** "Open Sans Condensed" **/, Arial, sans-serif;
-   font-size: .7em;
+   font-size: .8em;
    color: #8A7BA3;
-   margin-top: 30px;
+   padding-top: 30px;
 }
 
 a {
    text-decoration: none;
    color: #A39C7B;
+}
+
+ul a {
+   text-decoration: none;
+   color: #6A5E28;
 }
 
 /***  Header   ***/
@@ -193,7 +198,7 @@ div#home-words, div#words {
    clear: both;
    display: block;
    width: 100%;
-   margin: 13px auto;
+   margin: 0px auto;
    padding-top: 20px;
 }
 
@@ -238,19 +243,19 @@ div#home-words, div#words {
 
 @media screen and (min-width: 1024px) {
    div#home-words, div#words {
-      font-size: 3em;
+      font-size: 2.9em;
 }
 }
 
 @media screen and (min-width: 1292px) {
    div#home-words, div#words {
-      font-size: 3.3em;
+      font-size: 3.2em;
 }
 }
 
 @media screen and (min-width: 1292px) {
   div.about-words {
-      font-size: 3em;
+      font-size: 2.9em;
       
 }
 }
@@ -322,6 +327,7 @@ div#right-container, div#second-container {
    width: 31%;
    clear: none;
    float: left;
+   padding-bottom: 10px;
 }
 }
 div#home-portfolio {
@@ -338,6 +344,8 @@ div#home-portfolio img{
 @media screen and (min-width: 480px) {
 div#home-portfolio img{
    width: 70%;
+   margin: 8px;
+
 }
 }
 @media screen and (min-width: 520px) {
@@ -386,10 +394,16 @@ ul.quick li{
 
 .more {
    text-align: right;
+   clear: both;
+   margin-right: 7%;
 }
 
 div.home-philosophy h3 {
    margin: auto;
+}
+
+div.box p, div.box h4{
+   margin: 10px;
 }
 
 
@@ -399,6 +413,21 @@ div.box {
    padding: 8px;
    width: 97%;
    background: rgba(197, 214, 215, 0.5);
+}
+@media screen and (min-width: 768px) {
+   div.box {
+   height: 285px;
+}
+}
+@media screen and (min-width: 900px) {
+   div.box {
+   height: 235px;
+}
+}
+@media screen and (min-width: 960px) {
+   div.box {
+   height: 200px;
+}
 }
 
 @media screen and (min-width: 480px) {
@@ -834,7 +863,19 @@ div.footer-contact {
     border-radius: 18px;
 }
 div#click {
-   margin-top: 1.5em;
+   margin: auto;
+   height: 75px;
+}
+
+div#click {
+   margin: auto;
+   height: 50px;
+}
+
+@media screen and (min-width: 480px) {
+div#click {
+   height: 75px;
+}
 }
 img.linked {
    width: 55%;
