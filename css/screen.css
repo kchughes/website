@@ -864,7 +864,7 @@ div.footer-contact {
 }
 div#click {
    margin: auto;
-   height: 75px;
+   height: 70px;
 }
 
 div#click {
@@ -889,6 +889,7 @@ div#creative-commons {
    font-size: .7em;
    padding-top: 3em;
    clear: both;
+   text-align: right;
 }
 
 
