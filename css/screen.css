@@ -56,7 +56,19 @@ div#header {
    margin-bottom: 20px;
 }
 
+div#resizeme {
+   float: right;
+   background-color: grey;
+}
 
+div#resizeme p{
+   text-transform: uppercase;
+   font-family: "Josefin Sans", Arial, sans-serif;
+   padding: 0px 15px;
+   color: #fff;
+   font-weight: bold;
+   text-align: center;
+}
 div#logo {
    width: 100%;
    max-width: 325px;
