@@ -807,7 +807,7 @@ textarea {
 div#footer {
    clear: both;
    padding: 10px 20px;
-   border-top: 5px solid #9B9B9B;
+   border-top: 20px solid #9B9B9B;
    border-bottom-left-radius: 8px;
    border-bottom-right-radius: 8px;
    background-color: #DDDDDD; 
@@ -912,5 +912,10 @@ div#connect  {
    margin: 0 auto;
 }
 
+div#space {
+   height: 50px;
+   width: 100%;
+   margin-top: 50px;
+}
 
 
