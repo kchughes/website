@@ -875,19 +875,21 @@ div.footer-contact {
     border-radius: 18px;
 }
 div#click {
-   margin: auto;
+   margin: 20px auto 0px;
    height: 70px;
+   max-width: 400px;
 }
 
-div#click {
-   margin: auto;
+/*div#click {
+   margin: 0 auto;
    height: 50px;
-}
+}*/
 
 @media screen and (min-width: 480px) {
 div#click {
    height: 75px;
 }
+
 }
 img.linked {
    width: 55%;
