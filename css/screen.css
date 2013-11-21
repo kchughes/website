@@ -905,7 +905,12 @@ div#creative-commons {
 }
 
 
+/*** Connect Page ***/
 
+div#connect  {
+   width: 500px;
+   margin: 0 auto;
+}
 
 
 
